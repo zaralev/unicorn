@@ -82,7 +82,7 @@ nav {
     margin: auto;
     text-align: center;
     margin-top: 1em;
-    padding: 0 1em 1em 1em; }
+    padding: 0 1em 1em; }
     #container #projects .project {
       width: 33%;
       display: inline-table;
@@ -126,5 +126,32 @@ nav {
       @media screen and (max-width: 484px) {
         #container #projects .project {
           width: 100%; } }
+
+#footer {
+  background-color: #1b252c;
+  position: relative;
+  bottom: 0;
+  padding: 0.8em;
+  color: #fff;
+  text-align: center;
+  font-size: 0.85em; }
+  #footer p {
+    opacity: 0.8; }
+
+#social {
+  position: absolute;
+  right: 0;
+  bottom: 0.5em; }
+  #social img {
+    width: 20px;
+    margin-right: -0.3em; }
+    #social img:last-child {
+      margin-right: 1.2em; }
+
+#about {
+  position: relative;
+  top: 3.4em;
+  max-width: 100%;
+  overflow: hidden; }
 
 /*# sourceMappingURL=style.css.map */
