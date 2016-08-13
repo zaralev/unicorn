@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'cooper_hewitt';
+    src: url('../fonts/cooperhewitt-book-webfont.woff2') format('woff2'), url('../fonts/cooperhewitt-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+$green: #a9d935;
+$background: #0c1217;
+$lighter: #1b252c;
+body {
+    background-color: $background;
+    font-family: "omnes-pro", 'Montserrat', sans-serif;
+}
+#logo {
+    position: absolute;
+    top: 0.6em;
+    left: 1.3em;
+    width: 100px;
+    opacity: 0.7;
+    transition: 0.2s ease-out;
+    &:hover {
+        opacity: 1;
+        transition: 0.2s ease-out;
+    }
+    &:active {
+        opacity: 0.5;
+    }
+    @media screen and (max-width: 447px) {
+        left: 0.7em;
+    }
+}
+nav {
+    background-color: $lighter;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    -webkit-box-shadow: 0 -3px 20px 3px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 -3px 20px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 -3px 20px 3px rgba(0, 0, 0, 0.2);
+    ul {
+        padding: 1em;
+        text-align: right;
+        li {
+            list-style-type: none;
+            display: inline-table;
+            margin-left: 0.7em;
+            padding-top: 0.3em;
+            cursor: pointer;
+            &:last-child {
+                margin-right: 1.3em;
+                @media screen and (max-width: 447px) {
+                    margin-right: 0.5em;
+                }
+            }
+            &:first-child {
+                @media screen and (max-width: 447px) {
+                    display: none;
+                }
+            }
+            a {
+                color: #fff;
+                text-decoration: none;
+                transition: 0.2em ease-out;
+                opacity: 0.7;
+                font-family: 'cooper_hewitt',sans-serif;
+                font-size: 1em;
+                text-transform: uppercase;
+                &:active,
+                &:hover {
+                    color: $green;
+                    transition: 0.2em ease-out;
+                }
+            }
+        }
+    }
+}
+.active-page {
+    color: $green;
+    border-bottom: 2px solid $green;
+    transition: 0.2em ease-out;
+    opacity: 1;
+    &:active,
+    &:hover {
+        opacity: 0.7;
+    }
+}
+#container {
+    position: relative;
+    top: 3.4em;
+    #banner {
+        img {
+            max-width: 100%;
+        }
+    }
+    #projects {
+        margin: auto;
+        text-align: center;
+        margin-top: 1em;
+        padding: 0 1em 1em 1em;
+        .project {
+            width: 33%;
+            display: inline-table;
+            vertical-align: top;
+            background-color: $lighter;
+            margin-bottom: 0.3em;
+            padding: 1em;
+            img {
+                max-width: 100%;
+                cursor: pointer;
+                transition: 0.2s ease-out;
+                opacity: 0.8;
+                margin-bottom: 1em;
+                &:hover {
+                    -webkit-box-shadow: 0 0 27px -4px rgba(12,18,23,1);
+                    -moz-box-shadow: 0 0 27px -4px rgba(12,18,23,1);
+                    box-shadow: 0 0 27px -4px rgba(12,18,23,1);
+                }
+            }
+            h1 a {
+                text-align: center;
+                font-family: 'cooper_hewitt',sans-serif;
+                text-transform: uppercase;
+                color: #fff;
+                font-size: 0.95em;
+                opacity: 0.8;
+                text-decoration: none;
+                transition: 0.2s ease-out;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            h2 {
+                letter-spacing: 0.05em;
+                color: $green;
+                opacity: 0.9;
+                text-align: center;
+                text-transform: lowercase;
+                font-size: 0.9em;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            @media screen and (max-width:727px) {
+                width: 49%;
+            }
+            @media screen and (max-width:484px) {
+                width: 100%;
+            }
+        }
+    }
+}
