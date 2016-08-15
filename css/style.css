@@ -75,7 +75,8 @@ nav {
 
 #container {
   position: relative;
-  top: 3.4em; }
+  top: 3.4em;
+  padding-bottom: 2.5em; }
   #container #banner img {
     max-width: 100%; }
   #container #projects {
@@ -129,7 +130,8 @@ nav {
 
 #footer {
   background-color: #1b252c;
-  position: relative;
+  position: absolute;
+  width: 100%;
   bottom: 0;
   padding: 0.8em;
   color: #fff;
@@ -151,7 +153,55 @@ nav {
 #about {
   position: relative;
   top: 3.4em;
-  max-width: 100%;
-  overflow: hidden; }
+  padding-bottom: 2.5em;
+  width: 80%;
+  margin: auto;
+  padding: 2em;
+  color: #fff;
+  font-size: 1.2em;
+  opacity: 0.9; }
+  #about img {
+    width: 100%; }
+  #about ul li {
+    list-style-type: none;
+    display: inline-table;
+    vertical-align: top; }
+    #about ul li h1 {
+      font-family: 'cooper_hewitt',sans-serif;
+      color: #a9d935;
+      text-transform: uppercase;
+      font-size: 2em;
+      margin-bottom: 0.4em; }
+      #about ul li h1 span {
+        font-family: 'omnes',sans-serif;
+        text-transform: lowercase;
+        font-style: italic;
+        opacity: 0.5; }
+    #about ul li p {
+      line-height: 1.5em;
+      text-align: center;
+      opacity: 0.8; }
+      #about ul li p span.coop {
+        width: 100%;
+        display: block;
+        margin: 1em 0 -0.5em;
+        background-color: #1b252c;
+        padding: 1em;
+        opacity: 1; }
+      #about ul li p span.line {
+        border-bottom: 0.7em solid rgba(169, 217, 53, 0.2); }
+    #about ul li:first-child {
+      width: 28%; }
+    #about ul li:last-child {
+      padding: 1em 2em;
+      width: 70%; }
+  @media screen and (max-width: 1138px) {
+    #about {
+      padding: 1em; }
+      #about ul li:first-child {
+        width: 100%; }
+      #about ul li:last-child {
+        padding: 1em 0;
+        width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
