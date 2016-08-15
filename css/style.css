@@ -88,7 +88,6 @@ nav {
       width: 33%;
       display: inline-table;
       vertical-align: top;
-      background-color: #1b252c;
       margin-bottom: 0.3em;
       padding: 1em; }
       #container #projects .project img {
@@ -97,10 +96,6 @@ nav {
         transition: 0.2s ease-out;
         opacity: 0.8;
         margin-bottom: 1em; }
-        #container #projects .project img:hover {
-          -webkit-box-shadow: 0 0 27px -4px #0c1217;
-          -moz-box-shadow: 0 0 27px -4px #0c1217;
-          box-shadow: 0 0 27px -4px #0c1217; }
       #container #projects .project h1 a {
         text-align: center;
         font-family: 'cooper_hewitt',sans-serif;
